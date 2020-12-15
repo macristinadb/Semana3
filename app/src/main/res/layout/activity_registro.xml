@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lblTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="117dp"
+                android:layout_marginLeft="117dp"
+                android:layout_marginTop="50dp"
+                android:textSize="@dimen/text_size"
+                android:text="Confirmar Datos" />
+
+            <TextView
+                android:id="@+id/lblNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:layout_marginLeft="63dp"
+                android:textSize="@dimen/text_size"
+                android:hint="Nombre Completo"
+                android:layout_below="@+id/lblTitulo"
+                android:layout_marginTop="80dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lblTitFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:gravity="end"
+                android:textSize="@dimen/text_size"
+                android:text="Fecha Nacimiento : "
+                android:layout_marginStart="63dp"
+                />
+            <TextView
+                android:id="@+id/lblFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:hint="Fecha Nac"
+                android:layout_toRightOf="@+id/lblTitFechaNacimiento"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/lblTitTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono : "
+            android:textSize="@dimen/text_size"
+            android:gravity="end"
+            android:layout_marginStart="63dp"
+            android:layout_marginLeft="63dp"
+            />
+            <TextView
+                android:id="@+id/lblTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:textSize="@dimen/text_size"
+                android:layout_toRightOf="@+id/lblTitTelefono"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lblTitEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:layout_marginLeft="63dp"
+                android:gravity="end"
+                android:textSize="@dimen/text_size"
+                android:text="Email : " />
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="@dimen/text_size"
+                android:layout_toRightOf="@+id/lblTitEmail"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lblTitDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:layout_marginLeft="63dp"
+                android:gravity="end"
+                android:textSize="@dimen/text_size"
+                android:text="Descripcion : " />
+            <TextView
+                android:id="@+id/lblDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Descripcion Contacto"
+                android:textSize="@dimen/text_size"
+                android:layout_toRightOf="@+id/lblTitDescripcion"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:layout_marginLeft="63dp"
+                android:text="Editar Datos"
+
+                android:onClick="editarInfo"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

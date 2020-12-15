@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="22dp"
+            android:hint="Nombre Completo" />
+
+        <RelativeLayout
+           android:id="@+id/lyFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombreCompleto">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:enabled="false"
+                android:hint="Fecha Nacimiento"
+                android:inputType="date|datetime" />
+            <Button
+                android:id="@+id/btnMostrarDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:layout_toRightOf="@+id/txtFechaNacimiento"
+                android:onClick="mostrarFecha"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lyFechaNac"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:inputType="phone"
+            android:hint="Telefono" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTelefono"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layertxtContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmail"
+            android:hint="Desccripcion Contacto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+              />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnSgte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+
+        android:layout_alignParentBottom="true"
+            android:onClick="irSgte"
+            />
+    </RelativeLayout>
+</LinearLayout>
